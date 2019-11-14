@@ -4,9 +4,3 @@
 [submodule "server"]
 	path = server
 	url = https://gitlab.coml.lscp.ens.fr/ezhealth/seshat-lrec/seshat-restful-server
-[submodule "doc"]
-	path = docs
-	url = https://gitlab.coml.lscp.ens.fr/ezhealth/seshat-lrec/seshat-tutorial.git
-[submodule "docs"]
-	path = docs
-	url = https://gitlab.coml.lscp.ens.fr/ezhealth/seshat-lrec/seshat-tutorial.git
