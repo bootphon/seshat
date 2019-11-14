@@ -1,0 +1,9 @@
+[submodule "client"]
+	path = client
+	url = https://gitlab.coml.lscp.ens.fr/ezhealth/seshat-lrec/seshat-angular-client.git
+[submodule "server"]
+	path = server
+	url = https://gitlab.coml.lscp.ens.fr/ezhealth/seshat-lrec/seshat-restful-api.git
+[submodule "doc"]
+	path = docs
+	url = https://gitlab.coml.lscp.ens.fr/ezhealth/seshat-lrec/seshat-tutorial.git
