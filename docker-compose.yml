@@ -1,0 +1,34 @@
+version: "3"
+
+services:
+  mongo:
+    image: mongo:latest
+    tty: true
+    stdin_open: true
+    container_name: seshat_mongo_db
+    ports:
+      - "127.0.0.1:27017:27017"
+    volumes:
+      - ./mongodata:/corpora/db
+    restart: always
+
+  server:
+    build: .
+    image: 'seshat/server:prod'
+    container_name: seshat
+    ports:
+      - "5000:80"
+      # - "4200:4200"
+    restart: always
+    depends_on:
+      - mongo
+    volumes:
+      # set the dataset mounting point
+      - ./corpora:/api/corpora
+    environment:
+      - FLASK_CONFIG=docker
+      - ADMIN_USERNAME=hadware
+      - ADMIN_PASSWORD=test
+      - ADMIN_EMAIL=test@test.com
+      - ADMIN_FIRST_NAME=Perceval
+      - ADMIN_LAST_NAME=Le Gaulois
