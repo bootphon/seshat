@@ -166,6 +166,9 @@ Still in the server's virtual environment, run the command (whilst replacing the
 If you go back to the `<http://localhost:5000/>`_ page, you should now be able to login with the supplied username
 and password. At this point, your installation of Seshat is fully usable, albeit not very practical.
 
+You can drop corpus files in the default ``server/corpora/`` folder for Seshat to use for annotation. Be sure to
+comply with the :any:`corpus`.
+
 Having Seshat as a Daemon
 -------------------------
 
@@ -201,3 +204,4 @@ If you wish to have Seshat running on boot, run:
 .. code-block:: bash
 
     sudo systemctl enable seshat.service
+

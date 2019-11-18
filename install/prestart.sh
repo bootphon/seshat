@@ -1,0 +1,1 @@
+add-manager $ADMIN_USERNAME $ADMIN_PASSWORD $ADMIN_EMAIL --first_name "$ADMIN_FIRST_NAME" --last_name "$ADMIN_LAST_NAME"

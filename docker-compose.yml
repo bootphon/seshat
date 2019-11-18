@@ -9,7 +9,7 @@ services:
     ports:
       - "127.0.0.1:27017:27017"
     volumes:
-      - ./mongodata:/corpora/db
+      - ./mongodata:/data/db
     restart: always
 
   server:
@@ -18,17 +18,17 @@ services:
     container_name: seshat
     ports:
       - "5000:80"
-      # - "4200:4200"
+      - "4200:4200"
     restart: always
     depends_on:
       - mongo
     volumes:
       # set the dataset mounting point
-      - ./corpora:/api/corpora
+      - ./corpora:/app/corpora
     environment:
       - FLASK_CONFIG=docker
       - ADMIN_USERNAME=manager
       - ADMIN_PASSWORD=your_admin_password
       - ADMIN_EMAIL=test@test.com
       - ADMIN_FIRST_NAME=Perceval
-      - ADMIN_LAST_NAME=Le Gaulois
+      - ADMIN_LAST_NAME="Le Gaulois"

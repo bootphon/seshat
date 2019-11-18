@@ -11,7 +11,7 @@ File Based Corpus
 =================
 
 This kind of corpus is just a file hierarchy with audio files in it. Structure doesn't matter, Seshat will just
-look (_recursively_) for all files matching an audio extension (`.wav`, `.ogg`, `.flac`, `.mp3`), and consider them
+look (*recursively*) for all files matching an audio extension (`.wav`, `.ogg`, `.flac`, `.mp3`), and consider them
 to be corpus files. You just have to "drop" that audio folder in the folder you defined as `corpora`.
 
 It's however advised to have a hierarchical structure that describes best your data, as the path to the file will
@@ -38,6 +38,9 @@ One of people saying things::
 Then, let's also consider a corpus of bird songs::
 
    corpus_birds/
+    ├── unknown_1.wav
+    ├── unknown_2.mp3
+    ├── summary.docx
     ├── blackbird
     │   ├── 001.wav
     │   ├── 002.ogg
@@ -52,7 +55,8 @@ Then, let's also consider a corpus of bird songs::
         └── 002.wav
 
 As you can see, there are no constraints on the file structure, the number of files, or the naming of these files
-(however, for your own sake, please keep some consistency in your naming conventions).
+(however, for your own sake, please keep some consistency in your naming conventions). You can also notice that there
+is a ``docx`` file thrown in there, that Seshat will just ignore.
 
 The corpus's root folder will be used as the corpus's name by seshat, e.g. here, it's corpus_people and corpus_bird.
 
