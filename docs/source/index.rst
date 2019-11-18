@@ -6,15 +6,22 @@
 Welcome to Seshat Tutorial's documentation!
 ===========================================
 
+The Seshat annotation manager is a simple system for the automated management of annotation campaigns of speech data.
+It enables a campaign manager to assign annotation tasks to a pool of annotators, and ensure that annotations all
+comply with a predefined annotation Schema, easily created through Seshat's campaign creation interface.
+
+* If you're willing to learn how to install Seshat, proceed to :any:`install`
+* If you want to add annotations corpora to an already-installed instance of Seshat,
+  proceed to the :any:`admin-docker` or :any:`admin-manual` depending on your type of installation.
+* If you're a campaign manager and wish to learn how to create annotation campaigns and manage them,
+  proceed to the :any:`manager`.
+
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Table of Contents:
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   install
+   manager
+   corpus
+   admin-docker
+   admin-manual

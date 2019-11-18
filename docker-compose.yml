@@ -27,8 +27,8 @@ services:
       - ./corpora:/api/corpora
     environment:
       - FLASK_CONFIG=docker
-      - ADMIN_USERNAME=hadware
-      - ADMIN_PASSWORD=test
+      - ADMIN_USERNAME=manager
+      - ADMIN_PASSWORD=your_admin_password
       - ADMIN_EMAIL=test@test.com
       - ADMIN_FIRST_NAME=Perceval
       - ADMIN_LAST_NAME=Le Gaulois

@@ -1,0 +1,13 @@
+[Unit]
+Description=uWSGI instance serving the seshat website
+After=network.target
+
+[Service]
+User=your_user
+Group=www-data
+WorkingDirectory=/path/to/seshat/server/
+Environment="PATH=/path/to/seshat/server/venv/bin:/usr/bin"
+ExecStart=/path/to/seshat/server/venv/bin/uwsgi --ini wsgi/seshat_http.ini
+
+[Install]
+WantedBy=multi-user.target

@@ -13,12 +13,15 @@ RUN echo $API_ROOT
 
 RUN npm run build --prod true
 
-FROM tiangolo/uwsgi-nginx:python3.6
+FROM tiangolo/uwsgi-nginx:python3.6-alpine3.8
 
 # Seshat Image
 ###########################
 # Useful folders
 RUN mkdir -p /app /app/data /client  /log /conf
+
+# installing ffmpeg for sound file decoding
+RUN apk add --no-cache ffmpeg
 
 WORKDIR /app
 
