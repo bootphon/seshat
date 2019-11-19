@@ -15,8 +15,8 @@ network**. If you want Seshat to be reachable from the web, follow :ref:`web-acc
 
 .. _docker-install:
 
-Docker Install
-==============
+Docker Install (Easy way)
+========================
 
 This type of install should work on any machine, regardless of the OS (Windows, Mac, Linux, although Unix systems are prefered),
 as long as you have the following requirements:
@@ -71,14 +71,22 @@ default value ``./corpora`` by your own. For instance here it's the path ``~/dat
       # set the dataset mounting point
       - ~/data/mycorpora/:/api/corpora
 
-Once that is done, still in the ``seshat/`` folder, just run
+Once that is done, still in the ``seshat/`` folder, tell docker to build and run your local image.
+The build part might take some time.
 
 .. code-block:: bash
 
+    docker-compose build
     docker-compose up
 
 This will automatically download the required Docker images, install them and setup Seshat and its database in a
-Docker environment. Once you see the message ``TO BE DEFINED`` displayed in your terminal, it means it's finished.
+Docker environment. Once you see the message the following messages displayed in your terminal, it means it's finished.
+
+.. code-block::
+
+    seshat    | 2019-11-19 12:40:36,460 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+    seshat    | 2019-11-19 12:40:36,460 INFO success: uwsgi entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+
 
 Test your access to the now active application by reaching the address `<http://localhost:4200>`_ in your browser.
 Check that you can log in with the username and password you specified in the configuration file.
@@ -87,6 +95,9 @@ Check that your corpora is in line with :any:`corpus`, and just drop it in the `
 folder (still in Seshat's current folder), or any other corpora folder that you set up during the configuration.
 
 Once that is done, you can start using Seshat, or learn how to use it in the :any:`manager`.
+
+.. note:: You can cut the running docker images with Ctrl-C. If you want them to run in the background,
+   run ``docker-compose up -d`` (the ``-d`` stands for daemon).
 
 .. _manual-install:
 
