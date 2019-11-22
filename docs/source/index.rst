@@ -14,14 +14,21 @@ comply with a predefined annotation Schema, easily created through Seshat's camp
 * If you want to add annotations corpora to an already-installed instance of Seshat,
   proceed to the :any:`admin-docker` or :any:`admin-manual` depending on your type of installation.
 * If you're a campaign manager and wish to learn how to create annotation campaigns and manage them,
-  proceed to the :any:`manager`.
+  proceed to the :any:`manager-tutorial`.
 
 .. toctree::
    :maxdepth: 2
-   :caption: Table of Contents:
+   :caption: Administrator's Guide:
 
    install
    manager
    corpus
    admin-docker
    admin-manual
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Campaign manager's Guide:
+
+   manager-tutorial
+   manager-reference
