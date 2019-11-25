@@ -17,7 +17,7 @@ python:
 
 # Exclude submodules
 submodules:
-  include:
+  exclude:
      - client
      - server
   recursive: false
