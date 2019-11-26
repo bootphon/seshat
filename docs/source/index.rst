@@ -21,7 +21,6 @@ comply with a predefined annotation Schema, easily created through Seshat's camp
    :caption: Administrator's Guide:
 
    install
-   manager
    corpus
    admin-docker
    admin-manual

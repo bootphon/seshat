@@ -94,7 +94,7 @@ You can now add audio corpora to Seshat, so you can start your first annotation 
 Check that your corpora is in line with :any:`corpus`, and just drop it in the ``corpora``
 folder (still in Seshat's current folder), or any other corpora folder that you set up during the configuration.
 
-Once that is done, you can start using Seshat, or learn how to use it in the :any:`manager`.
+Once that is done, you can start using Seshat, or learn how to use it in the :any:`manager-tutorial`.
 
 .. note:: You can cut the running docker images with Ctrl-C. If you want them to run in the background,
    run ``docker-compose up -d`` (the ``-d`` stands for daemon).
@@ -116,6 +116,7 @@ We here assume that your system has the following requirements:
 * A working nodeJS 12.3>= install
 * A mongoDB 3.6>= install (it could work with earlier versions)
 * An ffmpeg install
+
 
 Moreover, the advised web server to act as a web frontend is **Nginx**.
 
