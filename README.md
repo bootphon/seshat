@@ -45,7 +45,8 @@ We provide two ways to install Seshat:
 * A [manual and custom install](https://seshat-annotation.readthedocs.io/en/latest/install.html) for 
   those who like to have a fine control over their system.
 
-## Citing Seshat
+
+## Citing Seshat
 
 This should be set once the paper is published.
 
