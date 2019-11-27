@@ -22,16 +22,21 @@ This type of install should work on any machine, regardless of the OS (Windows, 
 as long as you have the following requirements:
 
 * A working install of Docker (we know it works with Docker 19.03 and later, it might work with earlier versions). If
-  you don't have Docker installed, follow its
-  `install instructions <https://docs.docker.com/v17.09/engine/installation/>`_.
+  you don't have Docker installed:
+
+    - On **MacOS** or **Windows**, follow the `install instructions <https://docs.docker.com/v17.09/engine/installation/>`_
+      for "Desktop".
+    - On **Linux** follow the `install instructions <https://docs.docker.com/v17.09/engine/installation/>`_ for "Sever"
+      (pick the right distibution). Pick the Community Edition (CE) install.
+
+      After installing,  you should make sure your current user has the right to run Docker images (by running
+      ``docker run hello-word`` for instance). If that isn't the case, follow
+      `these instructions <https://docs.docker.com/v17.09/engine/installation/linux/linux-postinstall/>`_.
+
 * If you installed docker on Linux (namely, Ubuntu) make sure that you have
   `docker-compose <https://docs.docker .com/compose/install/>`_ installed as well.
 * You should also also have Git installed on your system, to retrieve Seshat's sources. If you don't, follow
   `these intructions <https://git-scm.com/book/en/v2/Getting-Started-Installing-Git>`_.
-
-.. note:: On a linux system, you should make sure your current user has the right to run Docker images (by running
-  ``docker run hello-word`` for instance . If that isn't the case, follow
-  `these instructions <https://docs.docker.com/v17.09/engine/installation/linux/linux-postinstall/>`_.
 
 Once all these prerequisites are all installed, open a terminal, and retrieve the full Seshat sources
 
@@ -53,7 +58,7 @@ Once you're in that folder, edit (using any text editor) the ``docker-compose.ym
 
 Edit all the parameters defining the first admin's accounts properties:
 
-* For the username ``ADMIN_USERNAME`` use alphanumerical characters
+* For the username ``ADMIN_USERNAME`` use alphanumerical characters, no spaces
 * The password ``ADMIN_PASSWORD`` should be at least 8 characters long
 * The email defined in ``ADMIN_EMAIL`` should be a valid email address. If you don't want to put any, just leave the
   default one.
@@ -62,14 +67,13 @@ Edit all the parameters defining the first admin's accounts properties:
 .. note:: It's important that you set your password to something secure. **Do not** ignore this step and leave
    the example password preset.
 
-**Optionally**, you can set the "magic" corpora/dataset folder to something else than the default by replacing the
-default value ``./corpora`` by your own. For instance here it's the path ``~/data/mycorpora/``:
+Now, copy one or more of your corpus's folder to the ``corpora/`` folder that is already present. Do it either using
+your OS's file browser, or by running the following command
 
-.. code-block:: yaml
+.. code-block:: bash
 
-   volumes:
-      # set the dataset mounting point
-      - ~/data/mycorpora/:/api/corpora
+    cp -r /path/to/your/corpus/folder corpora/
+
 
 Once that is done, still in the ``seshat/`` folder, tell docker to build and run your local image.
 The build part might take some time.

@@ -5,9 +5,10 @@ Administering A Manual Seshat Install
 Managing Seshat
 ===============
 
-Here, we'll teach you how to manage Seshat as the administrator, **not as the campaign manager**.
+Here, we'll teach you how to manage Seshat as the administrator, **not as the campaign manager**, on a manual
+install of Seshat.
 
-.. _add-corpora:
+.. _add-corpora-manual:
 
 Adding Audio Corpora
 --------------------

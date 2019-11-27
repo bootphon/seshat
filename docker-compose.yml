@@ -23,12 +23,16 @@ services:
     depends_on:
       - mongo
     volumes:
-      # set the dataset mounting point
+      # set the corpora folder mounting point. You can set it to something different. For instance, if you
+      # corpora folder is /home/mark/data/my_corpora, this line will be
+      # - /home/mark/data/my_corpora:/app/corpora
+      # DO NOT change the second part of this line (the ":/app/corpora")
+      # DO NOT add another mounting point other than this one for the corpora folder
       - ./corpora:/app/corpora
     environment:
       - FLASK_CONFIG=docker
-      - ADMIN_USERNAME=manager
-      - ADMIN_PASSWORD=your_admin_password
-      - ADMIN_EMAIL=test@test.com
-      - ADMIN_FIRST_NAME=Perceval
+      - ADMIN_USERNAME=manager_username
+      - ADMIN_PASSWORD="your_admin_password"
+      - ADMIN_EMAIL="test@test.com"
+      - ADMIN_FIRST_NAME="Perceval"
       - ADMIN_LAST_NAME="Le Gaulois"

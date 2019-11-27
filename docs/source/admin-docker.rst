@@ -5,9 +5,10 @@ Administering A Docker Seshat Install
 Managing Seshat
 ===============
 
-Here, we'll teach you how to manage Seshat as the administrator, **not as the campaign manager**.
+Here, we'll teach you how to manage Seshat as the administrator, **not as the campaign manager**, on a docker
+install of seshat.
 
-.. _add-corpora:
+.. _add-corpora-docker:
 
 Adding Audio Corpora
 --------------------

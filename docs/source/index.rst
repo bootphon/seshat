@@ -24,6 +24,7 @@ comply with a predefined annotation Schema, easily created through Seshat's camp
    corpus
    admin-docker
    admin-manual
+   custom-parsers
 
 .. toctree::
    :maxdepth: 2

@@ -1,14 +1,19 @@
-==========================
-Seshat Audio Corpus Format
-==========================
+==============================
+Seshat Audio Corpus Management
+==============================
+
+Supported Corpus Formats
+========================
 
 Seshat supports two types of audio corpora:
 
-* The file based (audio files in a folder hierarchy)
-* The CSV summaries
+* The :ref:`file-based-corpus` (audio files in a folder hierarchy)
+* The :ref:`csv-based-corpus` summaries
+
+.. _file-based-corpus:
 
 File Based Corpus
-=================
+-----------------
 
 This kind of corpus is just a file hierarchy with audio files in it. Structure doesn't matter, Seshat will just
 look (*recursively*) for all files matching an audio extension (`.wav`, `.ogg`, `.flac`, `.mp3`), and consider them
@@ -60,9 +65,10 @@ is a ``docx`` file thrown in there, that Seshat will just ignore.
 
 The corpus's root folder will be used as the corpus's name by seshat, e.g. here, it's corpus_people and corpus_bird.
 
+.. _csv-based-corpus:
 
 CSV based Corpus
-================
+-----------------
 
 If you don't want to have the actual files from your corpus on the same machine as the Seshat website (for security
 reasons for instance), you can still provide seshat with a CSV file that summarizes your corpus. It only requires
@@ -84,3 +90,11 @@ The CSV file's name will be used as the corpus name by seshat, e.g., here it'll 
 
 .. note:: For CSV-based corpora, Seshat won't (quite naturally) be able to serve the audio files to the annotator,
   as they aren't available (even if you use a valid path as the file name).
+
+Importing Your Corpora to Seshat
+================================
+
+Importing a corpus to Seshat is a easy as dropping (or copying) a your folder or CSV file to Seshat's `corpora/` folder.
+You should go to :any:`Import a Corpus (Docker Install) <add-corpora-docker>` or
+:any:`Import a Corpus (Manual Install) <add-corpora-manual>` depending on your install
+to learn how to do that.
