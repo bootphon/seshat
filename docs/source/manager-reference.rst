@@ -85,7 +85,7 @@ Let's go over the different Informations that are displayed in this view:
 
 .. note:: Apart from the wiki page's content and assigning tasks, none of the campaigns' properties can be edited.
    The most important field where this is enforced is the campaign's :ref:`textgrid-checking-scheme`. This is to
-   ensure that all TextGrid files submitted to a campaign are of "cast in the same mould". If you wish to use
+   ensure that all TextGrid files submitted to a campaign are "cast in the same mould". If you wish to use
    another (even slightly different) checking scheme, create another campaign with a new scheme.
 
 Campaign Wiki Page

@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Seshat Tutorial's documentation!
-===========================================
+Welcome to Seshat Annotation Manager's documentation!
+=====================================================
 
 The Seshat annotation manager is a simple system for the automated management of annotation campaigns of speech data.
 It enables a campaign manager to assign annotation tasks to a pool of annotators, and ensure that annotations all
