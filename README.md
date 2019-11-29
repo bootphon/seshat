@@ -45,6 +45,14 @@ We provide two ways to install Seshat:
 * A [manual and custom install](https://seshat-annotation.readthedocs.io/en/latest/install.html) for 
   those who like to have a fine control over their system.
 
+## Contributing to Seshat
+
+Your help is needed! First, if you have any troubles or need any help using/installing Seshat, 
+post an issue and we'll try our best to help you solve it.
+
+If you're willing to contribute with code, you should probably submit an issue with your 
+idea first so we can guide you through it.
+
 ## Citing Seshat
 
 This should be set once the paper is published.
