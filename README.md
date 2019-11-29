@@ -53,8 +53,7 @@ post an issue and we'll try our best to help you solve it.
 If you're willing to contribute with code, you should probably submit an issue with your 
 idea first so we can guide you through it.
 
-
-## Citing Seshat
+## Citing Seshat
 
 This should be set once the paper is published.
 
