@@ -12,7 +12,7 @@ comply with a predefined annotation Schema, easily created through Seshat's camp
 
 * If you're willing to learn how to install Seshat, proceed to :any:`install`
 * If you want to add annotations corpora to an already-installed instance of Seshat,
-  proceed to the :any:`admin-docker` or :any:`admin-manual` depending on your type of installation.
+  or use some of Seshat's advanced features proceed to :any:`admin-manual`.
 * If you're a campaign manager and wish to learn how to create annotation campaigns and manage them,
   proceed to the :any:`manager-tutorial`.
 
@@ -22,7 +22,6 @@ comply with a predefined annotation Schema, easily created through Seshat's camp
 
    install
    corpus
-   admin-docker
    admin-manual
    custom-parsers
 

@@ -211,6 +211,11 @@ This scheme is used to measure inter-annotator (or "rater") agreement and have a
 a single file. Note that it is however much longer to annotate in this way, and should usually be used for a
 small part of your corpora, as a way to measure how much your annotators agree on these annotations.
 
+.. figure::  ../images/double_annotator_diagram_with_agreement.png
+   :align:   center
+
+   Double annotators task overview.
+
 .. todo
 
 .. _campaign-manager:
