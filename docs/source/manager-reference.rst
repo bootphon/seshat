@@ -184,19 +184,37 @@ It is contained in an :ref:`campaigns`, it references an audio file from the cam
 (assigned to one Annotator) or a *Double Annotator Task* (assigned to two annotators,
 who will annotate the assigned task in parallel).
 
+You maybe noticed that tasks (like annotators' accounts) can be *locked*. This effectively "freezes" the task,
+preventing its annotators to submit new TextGrid files or new comments.
+
 Single Annotator Tasks
 ++++++++++++++++++++++
 
-.. todo
+This is the 'default' task annotation schema. It has three steps:
+
+1. The annotator is given a template file (potentially along the audio file, if specified at the campaign's creation).
+   If an :ref:`textgrid-checking-scheme` is defined for that task's
+   parent annotation campaign, the template is pre-filled with the specified tiers.
+2. The annotator then has to annotate the file. They can validate it at any moment, and any uploaded TextGrid is
+   logged by Seshat (for any potential later review). Any submission containing errors is rejected.
+3. Upon the first valid submission, the valid TextGrid file is saved as the "final" TextGrid, and the task is
+   automatically marked as "done" by Seshat.
+   However, if the annotator (or the annotation manager) that their work is incomplete, they can still submit
+   corrected version of that final TextGrid file, that will overwrite the last correct "final" TextGrid.
 
 .. _double-annotator:
 
 Double Annotators Tasks
 +++++++++++++++++++++++
 
+This scheme is used to measure inter-annotator (or "rater") agreement and have a more robust annotation of
+a single file. Note that it is however much longer to annotate in this way, and should usually be used for a
+small part of your corpora, as a way to measure how much your annotators agree on these annotations.
+
 .. todo
 
 .. _campaign-manager:
+
 
 Campaign Manager
 ----------------
@@ -222,9 +240,16 @@ Annotators
 Users who are assigned a set of :ref:`annotation-tasks`.
 Their job is to complete the annotation of the audio files with the Praat software.
 If the TextGrid file they submit does not comply with their :ref:`annotation-tasks`'s
-:ref:`textgrid-checking-scheme`, Seshat pinpoint their annotation errors with detailed messages.
-The annotator can re-submit the concerned file to the platform based on these different feedbacks.
+:ref:`textgrid-checking-scheme`, Seshat pinpoints their annotation errors with detailed messages.
+The annotator can re-submit the affected file to the platform based on these different feedbacks.
 
-.. todo: account locking
+As you might have noticed in Seshat's client interface, it's possible to lock annotators account.
+This prevents user from that account to login and perform any action, without actually removing
+the account. This might be useful for two potential reasons :
+
+* if that user was involved in an annotation campaign, and you want to
+  make sure that they don't change the state of your annotated files in any possible way.
+* if that user was in a former campaign that you still want stored in Seshat, but for security
+  reasons, don't want to be able to reach the Seshat interface anymore.
 
 

@@ -56,4 +56,4 @@ RUN cp /conf/prestart.sh /app/
 
 ##########################
 # Entry point
-CMD ["/start.sh"]
+ENTRYPOINT ["/start.sh"]
