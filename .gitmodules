@@ -1,6 +1,6 @@
 [submodule "client"]
 	path = client
-	url = git@github.com:bootphon/seshat-angular-client.git
+	url = https://github.com/bootphon/seshat-angular-client.git
 [submodule "server"]
 	path = server
-	url = git@github.com:bootphon/seshat-restful-server.git
+	url = https://github.com/bootphon/seshat-restful-server.git
