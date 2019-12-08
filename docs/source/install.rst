@@ -42,7 +42,7 @@ Once all these prerequisites are all installed, open a terminal, and retrieve th
 
 .. code-block:: bash
 
-    git clone --recurse-submodules git@gitlab.coml.lscp.ens.fr:ezhealth/seshat-lrec/seshat.git
+    git clone --recurse-submodules git@github.com:bootphon/seshat.git
 
 Then, change the current directory to seshat's previously cloned directory
 
@@ -131,7 +131,7 @@ First of all, clone the full seshat project and ``cd`` into it
 
 .. code-block:: bash
 
-    git clone --recurse-submodules git@gitlab.coml.lscp.ens.fr:ezhealth/seshat-lrec/seshat.git
+    git clone --recurse-submodules git@github.com:bootphon/seshat.git
     cd seshat/
 
 Setting up the API (server)
@@ -221,3 +221,4 @@ If you wish to have Seshat running on boot, run:
 
     sudo systemctl enable seshat.service
 
+If you wish to serve Seshat to the web, proceed to :any:`web-access` .
