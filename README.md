@@ -55,5 +55,20 @@ idea first so we can guide you through it.
 
 ## Citing Seshat
 
-This should be set once the paper is published.
+If you're using Seshat, here's the citation you should use:
 
+```
+@inproceedings{titeux:hal-02496041,
+  TITLE = {{Seshat: A tool for managing and verifying annotation campaigns of audio data}},
+  AUTHOR = {Titeux, Hadrien and Riad, Rachid and Cao, Xuan-Nga and Hamilakis, Nicolas and Madden, Kris and Cristia, Alejandrina and Bachoud-L{\'e}vi, Anne-Catherine and Dupoux, Emmanuel},
+  URL = {https://hal.archives-ouvertes.fr/hal-02496041},
+  BOOKTITLE = {{LREC}},
+  ADDRESS = {Marseilles, France},
+  YEAR = {2020},
+  MONTH = May,
+  KEYWORDS = {speech transcription ; speech corpora ; annotations management},
+  PDF = {https://hal.archives-ouvertes.fr/hal-02496041/file/Seshat_2020_LREC_2020_Paper_Titeux_et_al__Final.pdf},
+  HAL_ID = {hal-02496041},
+  HAL_VERSION = {v1},
+}
+```
