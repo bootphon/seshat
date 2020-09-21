@@ -20,8 +20,8 @@ We want our annotators to :
 * clearly delimit where each task begins and ends, knowing that each of these are in a contiguous sequence.
   These tasks are named `MEMORY`, `ATTENTION`, `INVENTION`.
 * annotate the transcript of the subjects' speech.
-* less importantly, indicate when the interviewer is speaking (`INT`),
-  or if there's another person speaking (`OTH`),
+* less importantly, indicate when the interviewer is talking (`INT`),
+  or if there's another person talking (`OTH`),
 * indicate if there's some distinguishable noise at that
   might decrease the recording's quality (`NOI`).
 
@@ -48,7 +48,7 @@ slider. Also, set its **Validation options** to categorical (with categories `ME
 .. figure::  ../images/oral_task_tier.png
    :align:   center
 
-Second, use the "+" button to add another tier. This one, called `SUBJECT`, will be for the subjet's speech .
+Second, use the "+" button to add another tier. This one, called `SUBJECT`, will be for the subject's speech .
 Annotations for this tier cannot be checked (it's arbitrary text), thus, leave "Validation Options" to
 "None".
 
