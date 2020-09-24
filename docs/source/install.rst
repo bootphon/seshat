@@ -165,7 +165,7 @@ dependencies and compile the client's Angular Typescript code into JavaScript:
 
     cd ../client/
     npm install
-    npm run build --prod true --outputPath=../server/static/
+    npm run build -- --prod true --outputPath=../server/static/
 
 Now go back to the server's directory, and run ``python app.py`` again. If you reach the address
 `<http://localhost:5000/>`_, your should get Seshat's login page.
