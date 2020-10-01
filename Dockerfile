@@ -11,7 +11,7 @@ COPY client/ /app
 
 RUN echo $API_ROOT
 
-RUN npm run build --prod true
+RUN npm run build -- --prod
 
 FROM tiangolo/uwsgi-nginx:python3.6-alpine3.8
 
